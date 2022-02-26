@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <img>
-    <div>这是一个新项目</div>
     <router-view/>
   </div>
 </template>
