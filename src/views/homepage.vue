@@ -9,13 +9,18 @@
 
 
 <script>
-import myComponent from "@/components/HelloWorld.vue";
+import myComponent from "@/components/HelloWorld";
 export default {
   name: "homepage",
   data() {
     return {
       message: "父组件的值",
     };
+  },
+  provide(){
+    return{
+      parentValue:'爷爷辈组件'
+    }
   },
   components: { myComponent },
   methods: {
