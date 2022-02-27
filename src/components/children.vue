@@ -1,10 +1,11 @@
 <template>
   <div>
-    <div class="center">居中{{parentValue}}</div>
-    <!-- <div class="parent"> -->
-      <!-- <div class="son">这是子组件的子组件</div> -->
-      <div>子组件的子组件</div>
-    <!-- </div> -->
+    <!-- <div class="center">居中</div>
+    <div class="parent">
+      <div class="son">这是子组件的子组件</div>
+    </div> -->
+    <div>{{parentValue}}</div>
+    <div>子组件的子组件</div>
   </div>
 </template>
 
