@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import children from '@/components/children'
+import children from "@/components/children";
 export default {
   data() {
     return {
@@ -16,7 +16,7 @@ export default {
     };
   },
   props: ["message"],
-  components:{children},
+  components: { children },
   methods: {
     messageLong() {
       this.$emit("messageLong");

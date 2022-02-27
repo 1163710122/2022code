@@ -4,6 +4,7 @@
     <button @click="getChild">调用子组件的函数</button>
     <p>分割线-------</p>
     <my-component ref="myCom" :message='message' @messageLong="getLong"></my-component>
+    <router-link to="/page/wangjing">page</router-link>
   </div>
 </template>
 
@@ -14,13 +15,13 @@ export default {
   name: "homepage",
   data() {
     return {
-      message: "父组件的值",
+      message: "这是第一页",
     };
   },
-  provide(){
-    return{
-      parentValue:'爷爷辈组件'
-    }
+  provide() {
+    return {
+      parentValue: "第一页传的值",
+    };
   },
   components: { myComponent },
   methods: {
